@@ -38,7 +38,7 @@
     -fx-highlight-fill: -primary;
 }
 
-.text-field:focused {
+.text-field:focus {
     -fx-background-color: #ffffff;
     -fx-effect: dropshadow(gaussian, -secondary, 0, 0, 2, 2);
 }
