@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../SignUp.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SignUp_Controller">
+   <children>
+      <Pane layoutX="1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #032d4d;">
+         <children>
+            <ImageView fitHeight="195.0" fitWidth="272.0" layoutX="64.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="25.0" prefWidth="800.0" />
+            <Pane prefHeight="25.0" prefWidth="800.0">
+               <children>
+                  <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="778.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_linkedin_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_gmail_logo_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_facebook_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_instagram_logo_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8_whatsapp_48px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="57.0" layoutY="364.0" prefHeight="19.0" prefWidth="326.0" styleClass="sub-title" text="kihal-abderrahmane" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="407.0" styleClass="sub-title" text="abderrahmanekihal5@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="447.0" styleClass="sub-title" text="Abde Rahmane" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="483.0" prefHeight="19.0" prefWidth="77.0" styleClass="sub-title" text="Abdou_Khl" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="522.0" styleClass="sub-title" text="+213556451873" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="534.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_male_user_50px.png" />
+         </image>
+      </ImageView>
+      <PasswordField layoutX="506.0" layoutY="387.0" prefHeight="25.0" prefWidth="207.0" promptText="Password" styleClass="menuItem" stylesheets="@../SignUp.css" />
+      <TextField layoutX="506.0" layoutY="331.0" prefHeight="25.0" prefWidth="207.0" promptText="User Name" styleClass="menuItem" stylesheets="@../SignUp.css" />
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="450.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_user_male_26px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="450.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_key_2_64px.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox checkedColor="#032d4d" layoutX="506.0" layoutY="444.0" styleClass="mark" stylesheets="@../SignUp.css" text="             " unCheckedColor="#032d4d" />
+      <Label layoutX="617.0" layoutY="445.0" prefHeight="22.0" prefWidth="139.0" styleClass="hyperlink" text="Forget Pasword ? " />
+      <JFXButton buttonType="RAISED" layoutX="555.0" layoutY="497.0" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #032d4d;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="452.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8_eye_50px.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="509.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Welcome" textAlignment="CENTER" wrappingWidth="201.0">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

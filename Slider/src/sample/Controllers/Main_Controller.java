@@ -12,7 +12,7 @@ import javafx.util.Duration;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Main_Controller implements Initializable {
 
     @FXML
     private ImageView Exit;
@@ -29,10 +29,10 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        Exit.setOnMouseClicked(event -> {
-            System.exit(0);
-        });
-        slider.setTranslateX(-176);
+        Exit.setOnMouseClicked(event -> System.exit(0)); // pour exiter le programme
+
+        slider.setTranslateX(-215);
+
         Menu.setOnMouseClicked(event -> {
             TranslateTransition slide = new TranslateTransition();
             slide.setDuration(Duration.seconds(0.4));
@@ -41,7 +41,7 @@ public class Controller implements Initializable {
             slide.setToX(0);
             slide.play();
 
-            slider.setTranslateX(-176);
+            slider.setTranslateX(-215);
 
             slide.setOnFinished((ActionEvent e)-> {
                 Menu.setVisible(false);
@@ -54,7 +54,7 @@ public class Controller implements Initializable {
             slide.setDuration(Duration.seconds(0.4));
             slide.setNode(slider);
 
-            slide.setToX(-176);
+            slide.setToX(-215);
             slide.play();
 
             slider.setTranslateX(0);

@@ -10,10 +10,12 @@ import javafx.stage.StageStyle;
 public class Main extends Application {
     double x,y = 0;
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage stage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Gui/MainPage.fxml"));
-        primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setTitle("SGS");
+        //stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(new Scene(root));
+        stage.show();
+        stage.setTitle("SGS");
 
 
         root.setOnMousePressed(event -> {
@@ -22,13 +24,11 @@ public class Main extends Application {
         });
 
         root.setOnMouseDragged(event -> {
-            primaryStage.setX(event.getScreenX() - x);
-            primaryStage.setY(event.getScreenY() - y);
+            stage.setX(event.getScreenX() - x);
+            stage.setY(event.getScreenY() - y);
         });
 
-        primaryStage.setScene(new Scene(root, 800, 500));
 
-        primaryStage.show();
     }
 
 
